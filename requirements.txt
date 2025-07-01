@@ -1,0 +1,6 @@
+# for requirements.txt
+streamlit
+scikit-learn
+joblib
+pandas
+numpy
