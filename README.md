@@ -1,12 +1,22 @@
 # Malicious_Input_Classifier
+---
+## 📂 Folder Structure
 
-Perfect — let’s make your `README.md` professional, complete, and **competition-ready**. Below is a clean, well-structured template for your project:
+```
+MaliciousInputClassifier/
+├── app.py
+├── train.py
+├── sample_inputs.csv
+├── requirements.txt
+├── model/
+│   ├── rf_model.pkl
+│   └── label_encoder.pkl
+└── utils/
+    └── feature_extraction.py
+```
 
 ---
-
-## 📄 `README.md` for **Malicious Input Classifier for Web Forms**
-
-````markdown
+markdown
 # 🛡️ Malicious Input Classifier for Web Forms
 
 A machine learning-powered application that classifies user-submitted form inputs as:
@@ -44,21 +54,9 @@ This project aims to mitigate such threats by building a machine learning classi
 ---
 
 ## 🧱 System Architecture
+This project follows a clean and modular architecture that separates UI, feature extraction, model inference, and output presentation.
 
-```mermaid
-flowchart TD
-    A[🧑‍💻 User Interface<br>(Streamlit app.py)] --> B{Input Mode}
-    B -->|Single Input| C1[🔤 Text Area Input]
-    B -->|CSV Upload| C2[📁 CSV with input_text]
-
-    C1 --> D[🧠 Feature Extraction<br>(feature_extraction.py)]
-    C2 --> D
-
-    D --> E[🤖 ML Model Inference<br>(RandomForestClassifier)]
-    E --> F[📦 rf_model.pkl + label_encoder.pkl]
-
-    F --> G[🎯 Output Display<br>(Prediction: 🟢 Benign, 🔴 SQLI, 🟠 XSS)]
-````
+🖼️ Architecture Diagram
 
 ---
 
@@ -90,17 +88,6 @@ flowchart TD
 
 ---
 
-## 👥 Team Members & Contributions
-
-| Name               | Role and Contributions                                           |
-| ------------------ | ---------------------------------------------------------------- |
-| **\[Your Name 1]** | 🧠 ML Model Design, Feature Engineering, Model Training          |
-| **\[Your Name 2]** | 💻 Frontend Development using Streamlit, UI Design, Input Modes  |
-| **\[Your Name 3]** | 📦 Integration, Testing, Deployment Setup, Documentation, Report |
-
-*(Replace with real names and tasks. Make it clear who handled what.)*
-
----
 
 ## 🚀 How to Run Locally
 
@@ -131,44 +118,12 @@ streamlit run app.py
 
 ---
 
-## 📂 Folder Structure
+## 👥 Team Members & Contributions
 
-```
-MaliciousInputClassifier/
-├── app.py
-├── train.py
-├── sample_inputs.csv
-├── requirements.txt
-├── model/
-│   ├── rf_model.pkl
-│   └── label_encoder.pkl
-└── utils/
-    └── feature_extraction.py
-```
+| Name               | Role and Contributions                                           |
+| ------------------ | ---------------------------------------------------------------- |
+| **\[Your Name 1]** | 🧠 ML Model Design, Feature Engineering, Model Training          |
+| **\[Your Name 2]** | 💻 Frontend Development using Streamlit, UI Design, Input Modes  |
+| **\[Your Name 3]** | 📦 Integration, Testing, Deployment Setup, Documentation, Report |
 
 ---
-
-## 📌 Future Improvements
-
-* Add detection for additional threats (e.g., Command Injection)
-* Improve accuracy using deep learning (LSTM or BERT)
-* Integrate with live form submissions via Flask or FastAPI backend
-* Auto-sanitization suggestions for malicious inputs
-
----
-
-## 🏁 Conclusion
-
-This project offers a lightweight and effective approach to securing web applications from form-based injection attacks using ML. It blends AI, security, and web interface — delivering a powerful, real-time tool for input validation.
-
-```
-
----
-
-Let me know if you'd like this:
-- Converted into a **PDF**
-- Added as a file to your repo
-- Adjusted for submission portals (Hackathon, IEEE, etc.)
-
-Ready to submit? You’re just a final polish away from winning! 🏆
-```
