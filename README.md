@@ -75,6 +75,8 @@ MaliciousInputClassifier/
 
 ## 🚀 How to Run Locally
 
+📦 [Download the latest release here](https://github.com/sadiyabhokare/Malicious_Input_Classifier/releases) 
+
 ### 1. Clone the repository
 
 ```bash
