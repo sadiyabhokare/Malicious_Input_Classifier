@@ -1,22 +1,3 @@
-# Malicious_Input_Classifier
----
-## 📂 Folder Structure
-
-```
-MaliciousInputClassifier/
-├── app.py
-├── train.py
-├── sample_inputs.csv
-├── requirements.txt
-├── model/
-│   ├── rf_model.pkl
-│   └── label_encoder.pkl
-└── utils/
-    └── feature_extraction.py
-```
-
----
-markdown
 # 🛡️ Malicious Input Classifier for Web Forms
 
 A machine learning-powered application that classifies user-submitted form inputs as:
@@ -52,20 +33,24 @@ This project aims to mitigate such threats by building a machine learning classi
 - 🚫 Prevent potential malicious inputs before backend processing.
 
 ---
+## 📂 Folder Structure
 
-## 🧱 System Architecture
-This project follows a clean and modular architecture that separates UI, feature extraction, model inference, and output presentation.
-
-🖼️ Architecture Diagram
+```
+MaliciousInputClassifier/
+├── app.py
+├── train.py
+├── sample_inputs.csv
+├── requirements.txt
+├── architecture.png
+├── model/
+│   ├── rf_model.pkl
+│   └── label_encoder.pkl
+└── utils/
+    └── feature_extraction.py
+```
 
 ---
 
-## 📽️ Demo Video
-
-👉 [Click here to watch the demo video](#)
-*(Replace `#` with your YouTube/Drive/Streamlit Cloud video link)*
-
----
 
 ## 🧪 Sample Predictions
 
@@ -87,7 +72,6 @@ This project follows a clean and modular architecture that separates UI, feature
 | 🎯 UI       | `Streamlit`                   |
 
 ---
-
 
 ## 🚀 How to Run Locally
 
@@ -115,15 +99,24 @@ python train.py
 ```bash
 streamlit run app.py
 ```
+---
+## 🧱 System Architecture
+This project follows a clean and modular architecture that separates UI, feature extraction, model inference, and output presentation.
+
+![System Architecture](architecture.png)
+---
+
+## 📽️ Demo Video
+
+👉 [Click here to watch the demo video](https://drive.google.com/file/d/1tz-SLwx7bo42ai8T1YXPviKZwky7RfuX/view?usp=sharing)
 
 ---
 
 ## 👥 Team Members & Contributions
 
-| Name               | Role and Contributions                                           |
-| ------------------ | ---------------------------------------------------------------- |
-| **\[Your Name 1]** | 🧠 ML Model Design, Feature Engineering, Model Training          |
-| **\[Your Name 2]** | 💻 Frontend Development using Streamlit, UI Design, Input Modes  |
-| **\[Your Name 3]** | 📦 Integration, Testing, Deployment Setup, Documentation, Report |
+| Name                                                      | Role and Contributions                                           |
+|-----------------------------------------------------------|------------------------------------------------------------------|
+| [Rabiya Gavandi](https://github.com/Rabiya786-hash)       | 🧠 ML Model Design, Feature Engineering, Model Training          |
+| [Saniya Kalawant](https://github.com/SaniyaKalawant)      | 💻 Frontend Development using Streamlit, UI Design, Input Modes  |
+| [Sadiya Bhokare](https://github.com/sadiyabhokare)        | 📦 Integration, Testing, Deployment Setup, Documentation, Report |     
 
----
